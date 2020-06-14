@@ -30,5 +30,6 @@ int App::Run()
 
 void App::Update()
 {
-
+	wnd.Gfx().ClearBuffer(0.0f, 0.0f, 0.0f);
+	wnd.Gfx().EndFrame();
 }

@@ -48,6 +48,11 @@ void Window::SetTitle(const std::string& title)
 		throw WND_LAST_EXCEPT();
 	}
 }
+Graphics& Window::Gfx()
+{
+	return *pGfx;
+}
+
 // Window Stuff
 Window::Window( int width,int height,const char* name )
 {
@@ -75,6 +80,8 @@ Window::Window( int width,int height,const char* name )
 	}
 	// show window
 	ShowWindow( hWnd,SW_SHOWDEFAULT );
+
+	pGfx = std::make_unique<Graphics>(hWnd);
 }
 
 Window::~Window()
