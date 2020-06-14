@@ -12,13 +12,6 @@ int CALLBACK WinMain(
 	try
 	{
 		Window wnd( 800,800,"Lol" );
-		HDC hdc = GetDC(wnd.hWnd);
-
-		for (int i = 0; i < 800; i++) {
-			for (int j = 0; j < 800; j++) {
-				SetPixel(hdc, i, j, RGB(0, 0, 0));
-			}
-		}
 
 		return HandleEvents();
 	}
