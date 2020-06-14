@@ -1,6 +1,7 @@
-#define _MCBS
+
 #include "Window.h"
 #include "WindowsMessageMap.h"
+#include <sstream>
 
 
 int CALLBACK WinMain(
@@ -20,6 +21,7 @@ int CALLBACK WinMain(
 			// TranslateMessage will post auxilliary WM_CHAR messages from key msgs
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
+
 
 		}
 
