@@ -31,7 +31,7 @@ private:
 		~WindowClass();
 		WindowClass(const WindowClass&) = delete;
 		WindowClass& operator=(const WindowClass&) = delete;
-		static constexpr const char* wndClassName = "Chili Direct3D Engine Window";
+		static constexpr const char* wndClassName = "OpenGraphics Window";
 		static WindowClass wndClass;
 		HINSTANCE hInst;
 	};
